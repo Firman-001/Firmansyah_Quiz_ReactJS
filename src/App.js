@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import Sapa from "./sapa/sapa.js";
+import Click from "./click/click.js";
+import Paragraph from "./paragraph/paragraph.js";
+import Log from "./log/log.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sapa name="Napa" />
+      <Click />
+      <Log />
+      <Paragraph kata="Hallo aku Props PROPS DISINI" />
     </div>
   );
 }
